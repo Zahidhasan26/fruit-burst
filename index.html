@@ -5,9 +5,141 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fruit Burst</title>
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.7.3/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    
+    <header class="container mx-auto px-4 lg:px-20">
+        <!-- navbar section  -->
+        <div class="navbar bg-base-100 bg-red-400 rounded-full my-8 py-4 ">
+          <div class="flex-1 navbar-start">
+            <ul class="menu menu-horizontal px-1 text-white text-base">
+              <li><a>Home</a></li>
+              <li><a>About Us</a></li>
+              <li><a>Shop</a></li>
+              <li><a>All Fruits</a></li>
+            </ul>
+          </div>
+            <div class="flex-1 navbar-center">
+              <img src="/images/logo.png" alt="">
+              <a class="btn btn-ghost normal-case text-3xl text-white">Fruit Burst</a>
+            </div>
+            <div class="flex-none gap-2 ">
+              <div class="form-control">
+                <input type="text" placeholder="Search" class="input input-bordered w-24 md:w-auto rounded-full" />
+              </div>
+              
+            </div>
+          </div>
+          <!-- banner section  -->
+          <div class="carousel w-full ">
+            <!-- slider item 1 -->
+            <div id="slide1" class="carousel-item relative w-full bg-cover bg-center bg-no-repeat rounded-sm min-height" style="background-image: url('../images/banner1.png');">
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide4" class="btn btn-circle bg-zinc-950 text-white border-0 hover:text-black ">❮</a> 
+                
+                <a href="#slide2" class="btn btn-circle bg-zinc-950 text-white border-0 hover:text-black">❯</a>
+              </div>
+              <div class="flex flex-col  justify-center mx-auto text-center items-center	">
+                <h2 class="text-4xl text-white font-extrabold mb-2">Exotic tastes at your doorstep</h2>
+                <p class="text-base text-white my-2">We supply highly quality organic products</p>
+                <button class="btn mt-2 bg-red-500 text-white hover:bg-white hover:text-red-500 border-0 w-fit">Shop Now</button>
+              </div>
+            </div> 
+            <!-- slider item 2 -->
+            <div id="slide2" class="carousel-item relative w-full bg-cover bg-center bg-no-repeat rounded-sm" style="background-image: url('../images/banner2.png');">
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide1" class="btn btn-circle bg-zinc-950 text-white border-0 hover:text-black">❮</a> 
+                <a href="#slide3" class="btn btn-circle bg-zinc-950 text-white border-0 hover:text-black">❯</a>
+              </div>
+              <div class="flex flex-col  justify-center mx-auto text-center items-center	">
+                <h2 class="text-4xl text-white font-extrabold mb-2">Exotic tastes at your doorstep</h2>
+                <p class="text-base text-white my-2">We supply highly quality organic products</p>
+                <button class="btn mt-2 bg-red-500 text-white hover:bg-white hover:text-red-500 border-0 w-fit">Shop Now</button>
+              </div>
+            </div> 
+            <!-- slider item 3 -->
+            <div id="slide3" class="carousel-item relative w-full bg-cover bg-center bg-no-repeat rounded-sm" style="background-image: url('../images/banner3.png');">
+              
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide2" class="btn btn-circle bg-zinc-950 text-white border-0 hover:text-black">❮</a> 
+                <a href="#slide4" class="btn btn-circle bg-zinc-950 text-white border-0 hover:text-black">❯</a>
+              </div>
+              <div class="flex flex-col  justify-center mx-auto text-center items-center	">
+                <h2 class="text-4xl text-white font-extrabold mb-2">Exotic tastes at your doorstep</h2>
+                <p class="text-base text-white my-2">We supply highly quality organic products</p>
+                <button class="btn mt-2 bg-red-500 text-white hover:bg-white hover:text-red-500 border-0 w-fit">Shop Now</button>
+              </div>
+            </div> 
+            <!-- slide item 4 -->
+            <div id="slide4" class="carousel-item relative w-full bg-cover bg-center bg-no-repeat rounded-sm" style="background-image: url('../images/banner4.png');">
+              
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide3" class="btn btn-circle bg-zinc-950 text-white border-0 hover:text-black">❮</a> 
+                <a href="#slide1" class="btn btn-circle bg-zinc-950 text-white border-0 hover:text-black">❯</a>
+              </div>
+              <div class="flex flex-col  justify-center mx-auto text-center items-center	">
+                <h2 class="text-4xl text-white font-extrabold mb-2">Exotic tastes at your doorstep</h2>
+                <p class="text-base text-white my-2">We supply highly quality organic products</p>
+                <button class="btn mt-2 bg-red-500 text-white hover:bg-white hover:text-red-500 border-0 w-fit">Shop Now</button>
+              </div>
+            </div>
+            <!-- slider ends -->
+            <!-- fruits section  -->
+            
+          </div>
+    </header>
+    <main class="flex flex-col">
+      <div class="flex container mx-auto px-4 lg:px-40 cards">
+        <div class="card w-1/5 bg-base-100">
+          <figure class="px-10 pt-10">
+            <img src="images/fruit1.png" class="" />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title">Shoes!</h2>
+          </div>
+        </div>
+      </div>
+      <div class="flex container mx-auto px-4 lg:px-40 cards">
+        <div class="card w-1/5 bg-base-100">
+          <figure class="px-10 pt-10">
+            <img src="images/fruit1.png" class="" />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title">Shoes!</h2>
+          </div>
+        </div>
+      </div>
+      <div class="flex container mx-auto px-4 lg:px-40 cards">
+        <div class="card w-1/5 bg-base-100">
+          <figure class="px-10 pt-10">
+            <img src="images/fruit1.png" class="" />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title">Shoes!</h2>
+          </div>
+        </div>
+      </div>
+      <div class="flex container mx-auto px-4 lg:px-40 cards">
+        <div class="card w-1/5 bg-base-100">
+          <figure class="px-10 pt-10">
+            <img src="images/fruit1.png" class="" />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title">Shoes!</h2>
+          </div>
+        </div>
+      </div>
+      <div class="flex container mx-auto px-4 lg:px-40 cards">
+        <div class="card w-1/5 bg-base-100">
+          <figure class="px-10 pt-10">
+            <img src="images/fruit1.png" class="" />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title">Shoes!</h2>
+          </div>
+        </div>
+      </div>
+    </main>
 </body>
 </html>
