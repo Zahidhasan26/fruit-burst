@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.7.3/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header class="container mx-auto px-4 lg:px-20">
@@ -85,61 +86,237 @@
               </div>
             </div>
             <!-- slider ends -->
-            <!-- fruits section  -->
-            
           </div>
+          <!-- fruits section  -->
+          <section class="flex flex-col sm:flex-row mx-auto px-4 w-100 lg:w-4/5 cards">
+            <div class="card w-100 lg:w-1/5 sm:w-50 bg-base-100 rounded-none rounded-s">
+              <figure class="px-10 pt-10">
+                <img src="images/fruit1.png" class="" />
+              </figure>
+              <div class="card-body items-center text-center">
+                <h2 class="card-title">Shoes!</h2>
+              </div>
+            </div>
+            <div class="card w-100 lg:w-1/5 sm:w-50 bg-base-100 rounded-none ">
+              <figure class="px-10 pt-10">
+                <img src="images/fruit2.png" class="" />
+              </figure>
+              <div class="card-body items-center text-center">
+                <h2 class="card-title">Shoes!</h2>
+              </div>
+            </div>
+            <div class="card w-100 lg:w-1/5 sm:w-50 bg-base-100 rounded-none ">
+              <figure class="px-10 pt-10">
+                <img src="images/fruit3.png" class="" />
+              </figure>
+              <div class="card-body items-center text-center">
+                <h2 class="card-title">Shoes!</h2>
+              </div>
+            </div>
+            <div class="card w-100 lg:w-1/5 sm:w-50 bg-base-100 rounded-none ">
+              <figure class="px-10 pt-10">
+                <img src="images/fruit4.png" class="" />
+              </figure>
+              <div class="card-body items-center text-center">
+                <h2 class="card-title">Shoes!</h2>
+              </div>
+            </div>
+            <div class="card w-100 lg:w-1/5 sm:w-50 bg-base-100 rounded-none rounded-s">
+              <figure class="px-10 pt-10">
+                <img src="images/fruit5.png" class="" />
+              </figure>
+              <div class="card-body items-center text-center">
+                <h2 class="card-title">Shoes!</h2>
+              </div>
+            </div>
+          </section>
     </header>
-    <main class="flex flex-col">
-      <div class="flex container mx-auto px-4 lg:px-40 cards">
-        <div class="card w-1/5 bg-base-100">
-          <figure class="px-10 pt-10">
-            <img src="images/fruit1.png" class="" />
-          </figure>
-          <div class="card-body items-center text-center">
-            <h2 class="card-title">Shoes!</h2>
+    <main class="container mx-auto px-4 lg:px-20">
+      <!-- deal of the day section  -->
+      <section class="flex my-4 justify-between items-center">
+        <div class="text-start w-2/5">
+          <h2 class="text-4xl font-extrabold">
+            Deal of the day
+          </h2>
+          <p class="text-base py-3">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+        </div>
+        <!-- countdown -->
+        <div>
+          <div class="grid grid-flow-col gap-5 text-center auto-cols-max ">
+            <div class="flex flex-col">
+              <span class="countdown font-mono text-5xl font-extrabold">
+                <span style="--value:29;"></span>
+              </span>
+              days
+            </div>
+            <div class="font-light text-5xl">
+              :
+            </div> 
+            <div class="flex flex-col">
+              <span class="countdown font-mono text-5xl font-extrabold">
+                <span style="--value:10;"></span>
+              </span>
+              hours
+            </div> 
+            <div class="font-light text-5xl">
+              :
+            </div>
+            <div class="flex flex-col">
+              <span class="countdown font-mono text-5xl font-extrabold">
+                <span style="--value:24;"></span>
+              </span>
+              min
+            </div> 
+            <div class="font-light text-5xl">
+              :
+            </div>
+            <div class="flex flex-col">
+              <span class="countdown font-mono text-5xl font-extrabold">
+                <span style="--value:44;"></span>
+              </span>
+              sec
+            </div>
           </div>
         </div>
-      </div>
-      <div class="flex container mx-auto px-4 lg:px-40 cards">
-        <div class="card w-1/5 bg-base-100">
-          <figure class="px-10 pt-10">
-            <img src="images/fruit1.png" class="" />
-          </figure>
-          <div class="card-body items-center text-center">
-            <h2 class="card-title">Shoes!</h2>
+      </section>
+      <!-- cards  -->
+      <section class="flex flex-col lg:flex-row justify-between">
+        <!-- card 1 -->
+        <div class="card width">
+          <div class="card w-100 bg-base-100 shadow-xl">
+            <figure><img src="images/fruit6.png" alt="Shoes" /></figure>
+            <div class="card-body text-center">
+              <h2 class="card-title justify-center pb-2">12.90$ - 18.85$</h2>
+              <hr class="w-3/4 mx-auto py-2">
+              <p>Apples</p>
+              <div class="flex items-center justify-center text-red-500 pt-2"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></div>
+              <div class="card-actions justify-center">
+                <button class="btn btn-ghost text-red-500" onclick="my_modal_1.showModal()">Details</button>
+                <dialog id="my_modal_1" class="modal">
+                  <div class="modal-box">
+                    <figure><img class="pt-8 pb-2 w-2/5" src="images/fruit6.png" alt="Shoes" /></figure>
+                    <h3 class="font-bold text-3xl">Apples</h3>
+                    <p class="py-4">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                    <div class="flex items-center justify-center text-red-500 pt-2"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></div>
+                    <div class="modal-action justify-center">
+                      <form method="dialog">
+                        <!-- if there is a button in form, it will close the modal -->
+                        
+                        <div class="flex ">
+                          <button class="btn btn-outline text-red-500 mr-2">Close</button>
+                          <button class="btn text-white bg-red-500 hover:bg-black ml-2">Buy Now</button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </dialog>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="flex container mx-auto px-4 lg:px-40 cards">
-        <div class="card w-1/5 bg-base-100">
-          <figure class="px-10 pt-10">
-            <img src="images/fruit1.png" class="" />
-          </figure>
-          <div class="card-body items-center text-center">
-            <h2 class="card-title">Shoes!</h2>
+        <!-- card 2 -->
+        <div class="card width">
+          <div class="card w-100 bg-base-100 shadow-xl">
+            <figure><img src="images/fruit7.png" alt="Shoes" /></figure>
+            <div class="card-body text-center">
+              <h2 class="card-title justify-center pb-2">12.90$ - 18.85$</h2>
+              <hr class="w-3/4 mx-auto py-2">
+              <p>Orange</p>
+              <div class="flex items-center justify-center text-red-500 pt-2"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></div>
+              <div class="card-actions justify-center">
+                <button class="btn btn-ghost text-red-500" onclick="my_modal_2.showModal()">Details</button>
+                <dialog id="my_modal_2" class="modal">
+                  <div class="modal-box">
+                    <figure><img class="pt-8 pb-2 w-2/5" src="images/fruit7.png" alt="Shoes" /></figure>
+                    <h3 class="font-bold text-3xl">Orange</h3>
+                    <p class="py-4">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                    <div class="flex items-center justify-center text-red-500 pt-2"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></div>
+                    <div class="modal-action justify-center">
+                      <form method="dialog">
+                        <!-- if there is a button in form, it will close the modal -->
+                        
+                        <div class="flex ">
+                          <button class="btn btn-outline text-red-500 mr-2">Close</button>
+                          <button class="btn text-white bg-red-500 hover:bg-black ml-2">Buy Now</button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </dialog>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="flex container mx-auto px-4 lg:px-40 cards">
-        <div class="card w-1/5 bg-base-100">
-          <figure class="px-10 pt-10">
-            <img src="images/fruit1.png" class="" />
-          </figure>
-          <div class="card-body items-center text-center">
-            <h2 class="card-title">Shoes!</h2>
+        <!-- card 3 -->
+        <div class="card width">
+          <div class="card w-100 bg-base-100 shadow-xl">
+            <figure><img src="images/fruit8.png" alt="Shoes" /></figure>
+            <div class="card-body text-center">
+              <h2 class="card-title justify-center pb-2">12.90$ - 18.85$</h2>
+              <hr class="w-3/4 mx-auto py-2">
+              <p>Red Dragon</p>
+              <div class="flex items-center justify-center text-red-500 pt-2"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></div>
+              <div class="card-actions justify-center">
+                <button class="btn btn-ghost text-red-500" onclick="my_modal_3.showModal()">Details</button>
+                <dialog id="my_modal_3" class="modal">
+                  <div class="modal-box">
+                    <figure><img class="pt-8 pb-2 w-2/5" src="images/fruit8.png" alt="Shoes" /></figure>
+                    <h3 class="font-bold text-3xl">Red Dragon</h3>
+                    <p class="py-4">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                    <div class="flex items-center justify-center text-red-500 pt-2"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></div>
+                    <div class="modal-action justify-center">
+                      <form method="dialog">
+                        <!-- if there is a button in form, it will close the modal -->
+                        
+                        <div class="flex ">
+                          <button class="btn btn-outline text-red-500 mr-2">Close</button>
+                          <button class="btn text-white bg-red-500 hover:bg-black ml-2">Buy Now</button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </dialog>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="flex container mx-auto px-4 lg:px-40 cards">
-        <div class="card w-1/5 bg-base-100">
-          <figure class="px-10 pt-10">
-            <img src="images/fruit1.png" class="" />
-          </figure>
-          <div class="card-body items-center text-center">
-            <h2 class="card-title">Shoes!</h2>
+        <!-- card 4 -->
+        <div class="card width">
+          <div class="card w-100 bg-base-100 shadow-xl">
+            <figure><img src="images/fruit6.png" alt="Shoes" /></figure>
+            <div class="card-body text-center">
+              <h2 class="card-title justify-center pb-2">12.90$ - 18.85$</h2>
+              <hr class="w-3/4 mx-auto py-2">
+              <p>Banana</p>
+              <div class="flex items-center justify-center text-red-500 pt-2"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></div>
+              <div class="card-actions justify-center">
+                <button class="btn btn-ghost text-red-500" onclick="my_modal_4.showModal()">Details</button>
+                <dialog id="my_modal_4" class="modal">
+                  <div class="modal-box">
+                    <figure><img class="pt-8 pb-2 w-2/5" src="images/fruit8.png" alt="Shoes" /></figure>
+                    <h3 class="font-bold text-3xl">Banana</h3>
+                    <p class="py-4">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                    <div class="flex items-center justify-center text-red-500 pt-2"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></div>
+                    <div class="modal-action justify-center">
+                      <form method="dialog">
+                        <!-- if there is a button in form, it will close the modal -->
+                        
+                        <div class="flex ">
+                          <button class="btn btn-outline text-red-500 mr-2">Close</button>
+                          <button class="btn text-white bg-red-500 hover:bg-black ml-2">Buy Now</button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </dialog>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
+        
+      </section>
+             
     </main>
+    
 </body>
 </html>
